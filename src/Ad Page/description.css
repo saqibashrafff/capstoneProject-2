@@ -1,0 +1,42 @@
+
+.DetailsSectionDiv {
+    width: 100%;
+    margin: auto;
+    border: 1px solid rgb(172, 164, 164);
+    border-radius: 4px;
+    padding: 15px 5px 10px 5px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.DetailsHeadingDiv h5{
+    font-weight: 700;
+    color: #002f34;
+}
+
+.DetailsKeyDiv p{
+    font-size: 0.9rem;
+    color: rgba(0,47,52,.64);
+    line-height: 0.9;
+}
+
+.DetailsValueDiv p{
+    font-size: 0.9rem;
+    line-height: 0.9;
+    color: #002f34;
+}
+
+/* Description */
+
+.DescriptionDiv h5{
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #002f34;
+}
+
+.DescriptionDiv p{
+    font-size: 0.9rem;
+    line-height: 0.3;
+    font-weight: 400;
+    color: #002f34;
+}

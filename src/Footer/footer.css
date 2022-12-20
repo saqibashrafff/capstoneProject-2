@@ -1,0 +1,82 @@
+
+.FooterSection {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    background-color: #ebeeef;
+    box-shadow: 0px -1px 1px rgb(180, 178, 178);
+}
+
+.FooterCol1 {
+    padding-left: 5px;
+}
+
+.FooterCol2 {
+    padding-left: 32px;
+}
+
+.FooterCol3 {
+    padding-left: 60px;
+}
+
+.FooterCol4{
+    padding-left: 100px;
+}
+
+.FooterHeading {
+    font-size: 0.9rem;
+    margin-left: 32px;
+    font-weight: 700;
+}
+
+.FooterListItems {
+    list-style: none;
+}
+
+.FooterListItems a{
+    text-decoration:none;
+    color: rgba(0,47,52,.64);
+    font-size: 0.8rem;
+}
+
+
+.ContactHeading {
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+    margin-left: 117px;
+}
+
+.ContactIconsDiv {
+    margin: 0 0 30px 120px;
+    width: 40%;
+}
+
+.ContactIconsDiv a{
+    margin-right: 8px;
+}
+
+
+.ContactImagesDiv a{
+    margin-right: 7px;
+}
+
+.ContactImagesDiv{
+    width: 70%;
+    margin-left: 120px;
+}
+
+.ReleaseDateSection {
+    padding: 14px 30px 1px 0;
+    background-color: #002f34;
+}
+
+.ReleaseDate {
+    font-size: 0.8rem;
+    text-align: right;
+    font-weight: 600;
+    color: white;
+}
+
+span{
+    font-weight: 400;
+}

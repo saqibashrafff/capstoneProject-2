@@ -1,0 +1,18 @@
+
+
+.AdRowDiv {
+    width: 95%;
+    margin: auto;
+}
+
+.carousel-inner {
+    border-radius: 4px;
+}
+
+.AdColDiv img{
+    width: 100%;
+    object-fit: contain;
+    height: 480px;
+    background-color: black;
+}
+

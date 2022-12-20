@@ -1,0 +1,129 @@
+
+.CategorySection {
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+.CategoryRowDiv {
+    width: 95%;
+    margin: auto;
+}
+
+.CategoryNavCol a{
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: rgba(0,47,52,.64);
+}
+
+.CategoryNavCol span{
+    color:rgba(0,47,52,.64) ;
+    font-size: 0.9rem;
+}
+
+/* Section Heading */
+
+.CategoryHeadCol{
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.CategoryHeadCol h4{
+    font-weight: 700;
+}
+
+/* Item Div */
+
+.CategoryItemDiv {
+    border-top: 1px solid rgba(0,47,52,.36);
+}
+
+.CategoryItemRow {
+    border: 1px solid rgba(178, 181, 182, 0.64);
+    border-radius: 4px;
+    margin-bottom: 7px;
+}
+
+.ItemImageDiv img{
+    width: 100%;
+    object-fit: contain;
+    height: 150px;
+}
+
+.ItemTextDiv {
+    padding: 15px 19px;
+}
+
+
+.ItemHeadingDiv p{
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+.ItemHeadingDiv h5{
+    font-weight: 700;
+}
+
+.ItemSpanDiv {
+    font-size: 0.8rem;
+    color: rgba(4, 24, 24, 0.64);
+    margin-top: 32px;
+    
+}
+
+.ItemSpanDiv span{
+    font-weight:400 ;
+}
+
+.ItemIcondiv {
+    text-align: right;
+    padding-top: 13px;
+    padding-right: 15px;
+}
+
+/* Category View Section */
+
+.CategoryfilterDiv {
+    border-top: 1px solid rgba(0,47,52,.36);
+}
+
+.CategoryViewAdsCol span{
+    font-weight: 700;
+    font-size: 0.9rem;
+    background-color: #c8f8f6;
+    padding: 1px 7px 2px 7px;
+    border-radius: 3px;
+}
+
+.CategoryViewCheckCol label{
+    margin-left: 8px;
+}
+
+.CategoryViewCheckCol label{
+    font-size: 0.9rem;
+}
+
+.CategoryViewIconsCol span{
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.CategoryViewIconsCol img{
+    margin-left: 12px;
+}
+
+.dropdown {
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.dropdown span{
+    margin-left: 3px;
+}
+
+.dropdown li{
+    font-size: 0.9rem;
+}
+
+/* .CategoryViewRow {
+    justify-content: space-between;
+} */

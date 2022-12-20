@@ -1,0 +1,23 @@
+
+.CardRowDiv {
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.CardColDiv {
+    width: 24%;
+    padding: 0%;
+    margin-bottom: 11px;
+}
+
+.CardSectionHeading {
+    padding-left: 26px;
+    font-size: 1.5rem;
+}
+
+.CardColDiv img{
+    width: 100%;
+    object-fit:scale-down;
+    height: 150px;
+    background-color: #222;
+}

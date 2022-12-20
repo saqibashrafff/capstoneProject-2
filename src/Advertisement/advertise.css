@@ -1,0 +1,14 @@
+
+.AdvertisementDiv {
+    padding-top: 25px;
+    padding-bottom: 25px; 
+}
+
+.carousel-row-div {
+    width: 99%;
+    margin: auto;
+  }
+  
+  .carousel-col-div img{
+    height: 170px;
+  }

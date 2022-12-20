@@ -1,0 +1,54 @@
+
+
+/* Navbar */
+
+.navbarSection {
+    padding-left: 30px;
+    box-shadow: 0px 2px 5px rgb(236, 231, 231);
+}
+  
+.NavbarBrand {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: black;
+}
+  
+.NavbarItems a{
+    font-size: 0.9rem;
+    color: black;
+}
+
+/* .CategoryPageLink {
+  text-decoration: none;
+  font-size: 2rem;
+} */
+
+.DropDownSection {
+  width: 95%;
+  margin-left:34px;
+  border-radius: 0;
+  background-color: #fff;
+}
+
+.CategoryUlList {
+    list-style: none;
+    margin: 20px 0 30px 0;
+    font-size: 0.9rem;
+}
+
+.CategoryUlList .CategoryTitle{
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.CategoryUlList a{
+  text-decoration: none;
+  color: #085861;
+}
+
+.CategoryUlList li{
+  font-weight: 400;
+}
+
+
+

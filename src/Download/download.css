@@ -1,0 +1,32 @@
+
+.DownloadSection {
+    padding-top: 70px;
+}
+
+.DownloadSectionRow{
+    background-color: rgba(0, 47, 52, 0.03);
+}
+
+.DownloadRowCol2{
+    padding-left: 30px;
+}
+
+.DownloadRowCol2 h2{
+    font-weight: 700;
+    margin: 25px 0;
+}
+
+.DownloadRowCol2 p{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.DownloadRowCol3 h6{
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin: 55px 0 15px 6px;
+}
+
+.DownloadImagesDiv a{
+    margin: 0 5px;
+}
