@@ -7,7 +7,7 @@ function Footer (){
         <div className='FooterSection container-fluid'>
             <div className='row'>
 
-                <div className='col-lg-2 FooterCol1'>
+                <div className='col-lg-2 col-md-2 col-sm-2 FooterCol1'>
                     <h6 className='FooterHeading'>POPULAR CATEGORIES</h6>
                     <ul className='FooterListItems'>
                         <li>
@@ -28,7 +28,7 @@ function Footer (){
                     </ul>
                 </div>
 
-                <div className='col-lg-2 FooterCol2 '>
+                <div className='col-lg-2 col-md-2 col-sm-2 FooterCol2 '>
                     <h6 className='FooterHeading'>TRENDING SERACHES</h6>
                     <ul className='FooterListItems'>
                         <li>
@@ -49,7 +49,7 @@ function Footer (){
                     </ul>
                 </div>
 
-                <div className='col-lg-2 FooterCol3 '>
+                <div className='col-lg-2 col-md-2 col-sm-2 FooterCol3 '>
                     <h6 className='FooterHeading'>ABOUT US</h6>
                     <ul className='FooterListItems'>
                         <li>
@@ -70,7 +70,7 @@ function Footer (){
                     </ul>
                 </div>
 
-                <div className='col-lg-2 FooterCol4 '>
+                <div className='col-lg-2 col-md-2 col-sm-2 FooterCol4 '>
                     <h6 className='FooterHeading'>OLX</h6>
                     <ul className='FooterListItems'>
                         <li>
@@ -91,10 +91,10 @@ function Footer (){
                     </ul>
                 </div>
 
-                <div className='col-lg-4 FooterCol5 '>
+                <div className='col-lg-4 col-md-4 col-sm-4  FooterCol5 '>
                     <h6 className='ContactHeading'>FOLLOW US</h6>
 
-                    <div className='ContactIconsDiv'>
+                    <div className='ContactIconsDiv '>
                         <a href=''>
                             <img src="Images/FbIcon.svg" width={"15%"}></img>
                         </a>

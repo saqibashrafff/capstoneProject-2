@@ -4,7 +4,7 @@ import "./description.css";
 function Description(props){
     return (
         <div className="row DetailsSectionDiv">
-            <div className="col-lg-12 pb-2 DetailsHeadingDiv">
+            {/* <div className="col-lg-12 pb-2 DetailsHeadingDiv">
                 <h5>Details</h5>
             </div>
 
@@ -42,9 +42,9 @@ function Description(props){
                 <p>Automatic</p>
             </div>
 
-            <hr></hr>
+            <hr></hr> */}
 
-            <div className="col-lg-12 DescriptionDiv">
+            <div className="col-lg-12 col-md-12 col-sm-12 DescriptionDiv">
 
                 <h5>Description</h5>
                 <p style={{lineHeight: 1.1}}>{props.description}</p>

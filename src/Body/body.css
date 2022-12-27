@@ -1,13 +1,23 @@
 
 .CardRowDiv {
-    width: 100%;
-    justify-content: space-evenly;
+    width: 92%;
 }
 
 .CardColDiv {
-    width: 24%;
     padding: 0%;
     margin-bottom: 11px;
+}
+
+.NavLinkBody{
+    text-decoration: none;
+}
+
+.card-title{
+    color: #222;
+}
+
+.card-text{
+    color: rgb(77, 75, 75);
 }
 
 .CardSectionHeading {
@@ -20,4 +30,19 @@
     object-fit:scale-down;
     height: 150px;
     background-color: #222;
+}
+
+.LoadButtonDiv {
+    text-align: center;
+    padding: 40px 0 0 0;
+}
+
+.LoadButtonDiv button{
+    padding: 10px 10px 11px 10px ;
+    background-color: white;
+    color: #002f34;
+    border: 2px solid #002f34;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 1rem;
 }

@@ -12,3 +12,15 @@
   .carousel-col-div img{
     height: 170px;
   }
+
+  @media only screen and (max-width: 992px){
+    .carousel-col-div img{
+      height: 130px;
+    }
+  }  
+
+  @media only screen and (max-width: 768px){
+    .carousel-col-div img{
+      height: 100px;
+    }
+  } 

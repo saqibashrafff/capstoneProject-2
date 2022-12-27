@@ -3,12 +3,12 @@ import "./detail.css";
 
 function ProductDetail(props){
     return(
-        <div className="col-lg-4 ProductDetailCol">
+        <div className="col-lg-4 col-md-6 col-sm-12 ProductDetailCol">
             <div className="row ProductDetaildiv py-3">
 
-                <div className="DetailDiv1 col-lg-8">
+                <div className="DetailDiv1 col-lg-8 col-sm-8 col-md-8">
                     <div className="PriceDiv mb-3">
-                        <h2>Rs {props.price}$</h2>
+                        <h2>{props.price}$</h2>
                     </div>
 
                     <div className="textDiv">
@@ -18,7 +18,7 @@ function ProductDetail(props){
                     </div>
                 </div>
 
-            <div className="col-lg-4 DetailDiv2">
+            <div className="col-lg-4 col-md-4 col-sm-4 DetailDiv2">
                 <div className="IconDiv ">
                         <img src="Images/ShareIcon.svg" width={"20%"} className="p-0"></img>
                         <img src="Images/HeartIcon.svg" width={"20%"} className="p-0" ></img>
@@ -32,36 +32,36 @@ function ProductDetail(props){
 
             <div className="row SellerDiv">
 
-                <div className="col-lg-12 SellerHeadingDiv">
+                <div className="col-lg-12 col-md-12 col-sm-12 SellerHeadingDiv">
                     <h5 className="SellerDivHeading">Seller Description</h5>
                 </div>
-
-                <div className="col-lg-2 SellerImageDiv">
+        
+                <div className="col-lg-2 col-md-2 col-sm-2 SellerImageDiv">
                     <img src="Images/User.png" width={"130%"}></img>
                 </div>
 
-                <div className="col-lg-9 SellerNameDiv">
-                    <h5>Hassan Sheikh</h5>
+                <div className="col-lg-9 col-md-9 col-sm-9 SellerNameDiv">
+                    <h5>User Name</h5>
                     <p>Member since Oct 2019</p>
                 </div>
 
-                <div className="col-lg-12 SellerButtonDiv">
+                <div className="col-lg-12 col-md-12 col-sm-12 SellerButtonDiv">
                     <button className="SellerButton">Chat with seller</button>
                 </div>
 
-                <div className="col-lg-12 w-50 m-auto SellerContactDiv">
+                <div className="col-lg-12 col-md-12 col-sm-12  w-50 m-auto text-center SellerContactDiv">
                     <span>📞 +923222221770</span>
                 </div>
 
             </div>
 
             <div className="row LocationDiv">
-                <div className=" col-lg-12 LocationHeadingDiv">
+                <div className=" col-lg-12 col-sm-12 LocationHeadingDiv">
                     <h5>Posted in</h5>
                     <p>DHA Phase 2, Lahore</p>
                 </div>
 
-                <div className="col-lg-12 MapDiv">
+                <div className="col-lg-12 col-sm-12 MapDiv">
                     <div className="LocationImageDiv">
                         <img src="Images/Maps.svg"></img>
                         <h6>SEE LOCATION</h6>

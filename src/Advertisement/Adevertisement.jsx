@@ -6,7 +6,7 @@ function Advertisement (){
         <>
         <div className='AdvertisementDiv container-fluid'>
       <div className='row carousel-row-div '>
-        <div className='col-lg-12 carousel-col-div '>
+        <div className='col-lg-12 col-md-12 col-sm-12 carousel-col-div '>
 
         <div id="carouselExampleSlidesOnly" className="carousel slide " data-bs-ride="carousel" data-bs-interval={3000}>
             <div className="carousel-inner rounded-1">

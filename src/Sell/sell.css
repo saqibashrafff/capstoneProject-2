@@ -39,6 +39,7 @@
     width: 100%;
     border-radius: 5px;
     border: 1px solid black;
+    outline: none;
 }
 
 .Label {
@@ -47,10 +48,6 @@
 
 .PostTitleDiv span{
     font-size: 0.7rem;
-}
-
-.titleSpan1 {
-    margin-right: 70%;
 }
 
 /* Description */
@@ -63,6 +60,7 @@
     width: 100%;
     border: 1px solid black;
     border-radius: 5px;
+    outline: none;
 }
 
 .PostDescDiv span{
@@ -70,9 +68,9 @@
     margin-top: 0;
 }
 
-.DesctextSpan {
+/* .DesctextSpan {
     margin-right: 76.8%;
-}
+} */
 
 /* Brand */
 
@@ -85,6 +83,7 @@
     padding: 10px;
     border-radius: 5px;
     border: 1px solid black;
+    outline: none;
 }
 
 /* Condition */
@@ -100,7 +99,7 @@
 .ConditionButton {
     border: 1px solid black;
     padding: 13px 11px;
-    border-radius: 5px;
+    border-radius: 4px;
     margin-right: 8px;
     font-size: 0.9rem;
 }
@@ -116,6 +115,8 @@
     padding: 10px;
     border-radius: 5px;
     border: 1px solid black;
+    outline: none;
+    background-color: white;
 }
 
 .PriceDetaildiv {
@@ -172,6 +173,13 @@
     border: 1px solid black;
 }
 
+.LocationInputDiv {
+    border: 1px solid black;
+    height: 45px;
+    border-radius: 5px;
+    padding: 10px 0px 0px 11px;
+}
+
 /* Name */
 
 .NameInput {
@@ -179,6 +187,7 @@
     padding: 10px;
     border-radius: 5px;
     border: 1px solid black;
+    outline: none;
 }
 
 .PersonalInputsection{
@@ -187,6 +196,7 @@
 
 .userImagediv {
     width: 10%;
+    
 }
 
 .ContactInput {
@@ -194,6 +204,7 @@
     padding: 10px;
     border-radius: 5px;
     border: 1px solid black;
+    outline: none;
 }
 
 /* Submit */
@@ -206,8 +217,215 @@
     font-weight: 600;
 }
 
+/* Description Function Css */
 
+.onFocusDesc{
+    border: 1px solid aqua;
+}
 
+.onFocusTextDesc{
+    color: aqua;
+}
+
+.DescFocusOut{
+    border: 3px solid red;
+}
+
+.DescTextFocusOut{
+    /* margin-right: 62%; */
+    color: red;
+}
+
+.DescTextChange{
+    /* margin-right: 69%; */
+    color: red;
+}
+
+/* Condition Function Css */
+
+.ConditionButtonClick{
+    border: 3px solid #00a49f;
+    color: #00a49f;
+    background-color: #c8f8f6;
+    padding: 11px 9px;
+}
+
+/* Price Functions Css */
+
+.PriceFocusOn{
+    border: 1px solid aqua;
+}
+
+.PriceFocusOut{
+    border: 3px solid red;
+}
+
+.PriceColorFocus{
+    color: aqua;
+}
+
+/* Images Functions */
+
+.ImageOnChange{
+    border: 2px solid red;
+}
+
+@media only screen and (max-width: 992px){
+    .PostCategoryDiv h5{
+        font-size: 1.1rem ;
+    }
+
+    .PostCategoryDiv a{
+        font-size: 0.8rem;
+    }
+
+    .PostDetailsDiv h5{
+        font-size: 1.1rem;
+    }
+
+    .Label{
+        font-size: 0.8rem;
+    }
+
+    .ImageInput {
+        font-size: 0.6rem;
+    }
+
+    .PictureRowCol {
+        height: 125px;
+        position: relative;
+        border: 2px solid rgb(190, 189, 189);
+    }
+
+    .NameInput {
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid black;
+        outline: none;
+    }
+    
+    .PersonalInputsection{
+        display: flex;
+    }
+    
+    .userImagediv {
+        width: 10%;
+    }
+
+    .userImagediv img{
+        width: 100%;
+    }
+    
+    .ContactInput {
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid black;
+        outline: none;
+    }
+
+    .PersonalDetailsdiv h5{
+        font-size: 1.1rem;
+    }
+
+    .LocationDetailDiv h5{
+        font-size: 1.1rem;
+    }
+
+    .PictureDeatilDiv h5{
+        font-size: 1.1rem;
+    }
+
+    .PriceDetaildiv h5{
+        font-size: 1.1rem;
+    }
+    
+}
+
+@media only screen and (max-width: 768px){
+    .ImageInput {
+        font-size: 0.4rem;
+    }
+
+    .PictureRowCol {
+        height: 100px;
+        position: relative;
+        border: 2px solid rgb(190, 189, 189);
+    }
+
+    .ConditionButton {
+        border: 1px solid black;
+        padding: 11px 7px;
+        border-radius: 4px;
+        margin-right: 8px;
+        font-size: 0.7rem;
+    }
+
+    .userImagediv {
+        width: 15%;
+        margin-right: 7px;
+    }
+
+    .userImagediv img{
+        width: 100%;
+    }
+
+    .PostSection h5{
+        font-size: 1rem;
+    }
+
+    .PostSection span{
+        font-size: 0.6rem;
+    }
+
+    .Label{
+        font-size: 0.7rem;
+    }
+}
+
+@media only screen and (max-width: 576px){
+    .ConditionButton {
+        padding: 9px 5px;
+        margin-right: 5px;
+        font-size: 0.7rem;
+    }
+
+    .PictureRowCol {
+        margin: 5px 0;
+        width: 30%;
+    }
+
+    .userImagediv {
+        width: 25%;
+        margin-right: 7px;
+    }
+
+    .userImagediv img{
+        width: 100%;
+        margin-top: 3px;
+    }
+
+    .MobileView{
+        padding: 8px;
+        width: 100%;
+        border-radius: 5px;
+        border: 1px solid black;
+        outline: none;
+    }
+
+    .LocationInputDiv {
+        border: 1px solid black;
+        height: 40px;
+        border-radius: 5px;
+        padding: 7px 0px 0px 11px;
+    }   
+
+    .PostSubmitDiv button{
+        padding: 8px 30px;
+        font-weight: 600;
+    }
+}
 
 
 
@@ -263,3 +481,5 @@
     left: 50%;
     transform: translate(-50%, -50%);
 } */
+
+/* Title Conditions */

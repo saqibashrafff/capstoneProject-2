@@ -40,3 +40,23 @@
     font-weight: 400;
     color: #002f34;
 }
+
+@media only screen and (max-width: 992px){
+    .DescriptionDiv h5{
+        font-size: 1.2rem;
+    }
+
+    .DescriptionDiv p{
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .DescriptionDiv h5{
+        font-size: 1.1rem;
+    }
+
+    .DescriptionDiv p{
+        font-size: 0.7rem;
+    }
+}

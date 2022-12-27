@@ -54,7 +54,6 @@
 .SellButton {
   position: relative;
   border: none;
-  
 }
 
 .SellButton-span{
@@ -70,9 +69,68 @@
 }
 
 
+/* Media Queries for Custom Css */
+
+@media only screen and (max-width: 992px){
+.Olx-Icon {
+  width: 5%;
+}
+
+.Brand-Img {
+  width: 100%;
+}
+
+.City-Input {
+  width: 30%;
+}
+
+.SearchInput {
+  width: 55%;
+}
+
+} 
+
+@media only screen and (max-width: 768px){
+  .Olx-Icon {
+    width: 7%;
+  }
+
+  .Brand-Img {
+    width: 80%;
+  }
+
+  .City-Input {
+    width: 30%;
+  }
+  
+  .SearchInput {
+    width: 45%;
+  }
+
+  .Login-Div{
+    text-align: center;
+  }
+
+  .Header{
+    padding-bottom: 20px;
+  }
+
+  } 
 
 
+@media only screen and (max-width: 580px){
 
+.BrandImageDiv{
+  visibility: hidden;
+}
+.Brand-Img{
+  width: 0;
+}  
+
+.Input-Div{
+  text-align: center;
+}
+}
 
 
 

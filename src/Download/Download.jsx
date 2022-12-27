@@ -7,16 +7,16 @@ function Download (){
         <div className="DownloadSection container-fluid">
             <div className="row DownloadSectionRow">
 
-                <div className="col-lg-4">
+                <div className="col-lg-4 col-md-4 col-sm-4 col-xs-4 DownloadImageCol">
                     <img src="Images\Screenshot_2022-12-09_075613-removebg-preview.png" ></img>
                 </div>
 
-                <div className="col-lg-4 DownloadRowCol2">
+                <div className="col-lg-4 col-md-4 col-sm-4 col-xs-4 DownloadRowCol2">
                     <h2>TRY THE OLX APP</h2>
                     <p>Buy, sell and find just about anything using the app on your mobile.</p>
                 </div>
 
-                <div className='col-lg-4 DownloadRowCol3'>
+                <div className='col-lg-4 col-md-4 col-sm-4 DownloadRowCol3'>
                     <div><h6>GET YOUR APP TODAY</h6></div>
 
                     <div className='DownloadImagesDiv'>

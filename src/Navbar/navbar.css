@@ -7,15 +7,24 @@
     box-shadow: 0px 2px 5px rgb(236, 231, 231);
 }
   
-.NavbarBrand {
+.navbarSection span{
     font-size: 0.9rem;
-    font-weight: 500;
+    font-weight: 700;
     color: black;
 }
-  
-.NavbarItems a{
-    font-size: 0.9rem;
+
+.nav-link{
+    font-size: 1.1rem;
     color: black;
+    font-weight: 400;
+}
+
+.nav-link:hover{
+  color: #00a49f;
+}
+
+.CategoryDropDown:hover{
+  color: #00a49f;
 }
 
 /* .CategoryPageLink {
@@ -27,7 +36,6 @@
   width: 95%;
   margin-left:34px;
   border-radius: 0;
-  background-color: #fff;
 }
 
 .CategoryUlList {
@@ -43,12 +51,35 @@
 
 .CategoryUlList a{
   text-decoration: none;
-  color: #085861;
+  color: black;
 }
 
 .CategoryUlList li{
-  font-weight: 400;
+  font-weight: 700;
+  line-height: 2.5;
 }
+
+@media only screen and (max-width: 992px){
+.NavbarItems{
+  display: contents;
+}
+
+.navbarSection{
+  justify-content:space-around;
+}
+}
+
+@media only screen and (max-width: 768px){
+
+  .navbarSection{
+    justify-content: left;
+  }
+  .NavbarItems{
+    display: none;
+  }
+  
+}
+
 
 
 

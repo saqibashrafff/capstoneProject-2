@@ -4,16 +4,17 @@ import ProductDetail from "./ProductDetail";
 import Description from "./Description";
 import { useState, useEffect } from "react";
 import axios from "axios";
+import { useLocation } from "react-router-dom";
 
 function AdPage(props){
 
+    const location = useLocation();
     const [ProductPage, setProductPage] = useState("");
 
     useEffect(() => {
-        axios.get("https://fakestoreapi.com/products/" + props.id)
+        axios.get("https://fakestoreapi.com/products/" + location.state.id)
         .then((res) => {
             setProductPage(res.data);
-            console.log(ProductPage);
             
         })
         .catch((error) => {
@@ -21,20 +22,14 @@ function AdPage(props){
         })
       },[]);
 
-    // console.log(props.id);
-    // onLoad={() => {
-    //     props.PageOnLoad(props.id);
-    // }}
-
-
     return (
-        <div className="AdBodyDiv mt-3 pe-0" >
+        <div className="AdBodyDiv mt-3 mb-2 pe-0 " >
             
 
                 {/* {ProductPage.map((item) => {
                     return ( */}
                         <div className="row AdRowDiv ">
-                        <div className="col-lg-8 AdColDiv ps-0">
+                        <div className="col-lg-8 col-md-6 col-sm-12 AdColDiv ps-0">
 
                 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="false">
                     <div class="carousel-inner">

@@ -30,3 +30,167 @@
 .DownloadImagesDiv a{
     margin: 0 5px;
 }
+
+@media only screen and (max-width: 992px){
+
+    .DownloadSection {
+        height: 218px;
+    }
+
+    .DownloadImageCol img{
+        height: 75%;
+    }
+
+    .DownloadRowCol2 h2{
+        font-weight: 700;
+        margin: 25px 0 15px 0;
+        font-size: 1.3rem;
+    }
+    
+    .DownloadRowCol2 p{
+        font-size: 1.2rem;
+        font-weight: 400;
+        font-size: 1rem;
+    }
+
+    .DownloadRowCol3 h6{
+        font-size: 0.8rem;
+        font-weight: 700;
+        margin: 45px 0 15px 6px;
+    }
+    
+    .DownloadImagesDiv a{
+        margin: 0 5px;
+    }
+
+    .DownloadImagesDiv img{
+        width: 29%;
+    }
+}
+
+@media only screen and (max-width: 768px){
+
+    .DownloadSection {
+        height: 189px;
+    }
+
+    .DownloadImageCol img{
+        height: 60%;
+    }
+
+    .DownloadRowCol2{
+        padding-left: 45px;
+        
+    }
+
+    .DownloadRowCol2 h2{
+        font-weight: 700;
+        margin: 15px 0 5px 0;
+        font-size: 1rem;
+    }
+    
+    .DownloadRowCol2 p{
+        font-weight: 400;
+        font-size: 0.7rem;
+        
+    }
+
+    .DownloadRowCol3 h6{
+        font-size: 0.7rem;
+        font-weight: 700;
+        margin: 30px 0 10px 6px;
+    }
+    
+    .DownloadImagesDiv a{
+        margin: 0 5px;
+    }
+
+    .DownloadImagesDiv img{
+        width: 28%;
+    }
+}
+
+@media only screen and (max-width: 576px){
+
+    .DownloadSection{
+        height: 160px;
+    }
+
+    .DownloadRowCol2{
+        width: 34%;
+        padding: 0;
+        padding-left: 20px;
+    }
+    .DownloadImageCol{
+        height: 90px;
+        width: 36%;
+    }
+
+    .DownloadRowCol2 h2{
+        font-weight: 800;
+        margin: 15px 0 5px 0;
+        font-size: 0.7rem;
+    }
+
+    .DownloadImageCol img{
+        height: 100%;
+    }
+
+    .DownloadRowCol2 p{
+        font-weight: 400;
+        font-size: 0.6rem;   
+    }
+
+    .DownloadRowCol3{
+        width: 30%;
+    }
+
+    .DownloadRowCol3 h6{
+        font-size: 0.5rem;
+        font-weight: 700;
+        margin: 25px 0 3px 6px;
+    }
+
+    .DownloadImagesDiv a{
+        margin: 0 2px;
+    }
+
+    .DownloadImagesDiv img{
+        width: 30%;
+    } 
+
+    /* .DownloadSection {
+        height: 189px;
+        background-color: aqua;
+    }
+
+    .DownloadImageCol img{
+        height: 45%;
+    }
+
+    .DownloadRowCol2 h2{
+        font-weight: 700;
+        margin: 15px 0 5px 0;
+        font-size: 0.8rem;
+    }
+    
+    .DownloadRowCol2 p{
+        font-weight: 400;
+        font-size: 0.7rem;
+        
+    }
+
+    .DownloadRowCol3 h6{
+        font-size: 0.7rem;
+        font-weight: 700;
+        margin: 30px 0 10px 6px;
+    }
+    
+    .DownloadImagesDiv a{
+        margin: 0 5px;
+    }
+
+    .DownloadImagesDiv img{
+        width: 28%;
+    } */
+}

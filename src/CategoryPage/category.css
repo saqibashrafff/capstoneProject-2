@@ -37,6 +37,7 @@
     border-top: 1px solid rgba(0,47,52,.36);
 }
 
+
 .CategoryItemRow {
     border: 1px solid rgba(178, 181, 182, 0.64);
     border-radius: 4px;
@@ -53,14 +54,20 @@
     padding: 15px 19px;
 }
 
+.ItemTextDiv h5{
+    color: #002f34;
+}
+
 
 .ItemHeadingDiv p{
     font-weight: 400;
     margin-bottom: 8px;
+    color: #222;
 }
 
 .ItemHeadingDiv h5{
     font-weight: 700;
+    
 }
 
 .ItemSpanDiv {
@@ -124,6 +131,27 @@
     font-size: 0.9rem;
 }
 
-/* .CategoryViewRow {
-    justify-content: space-between;
-} */
+/* Desktop Div */
+
+.DesktopCardImageDiv img{
+    object-fit: contain;
+    width: 100%;
+    height: 150px;
+    background-color: #222;
+}
+
+/* Screen View Div */
+
+.ScreenViewDiv img{
+    width: 100%;
+    object-fit: contain;
+    height: 318px;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+}
+
+.ScreenViewTextDiv {
+    border-radius: 5px;
+    border: 1px solid rgba(0,47,52,.2);
+}
+

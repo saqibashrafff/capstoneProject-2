@@ -1,14 +1,70 @@
 
 import "./filter.css";
+import { NavLink } from "react-router-dom";
+import { useState, useEffect } from "react";
+import axios from "axios";
+import LocationsArray from "../LocationsArray";
 
-function FilterSection(){
+function FilterSection(props){
+
+    const [FilterCategory, setFilterCategory] = useState([]);
+
+    useEffect(() => {
+        axios.get("https://fakestoreapi.com/products/categories")
+        .then((res) => {
+            setFilterCategory(res.data);
+            console.log(res.data);
+        })
+        .catch((error) => {
+          console.log(error.message);
+        })
+      },[]);
+
+    const [PriceOne, setPriceOne] = useState();
+    const [PriceTwo, setPriceTwo] = useState();
+
+    function FromPrice(event){
+        
+        setPriceOne(event.target.value);
+
+      }
+
+      function ToPrice(event){
+
+        setPriceTwo(event.target.value);
+
+        if(PriceOne == "" || event.target.value == ""){
+            console.log("Both inputs are empty");
+        }else {
+            props.HandleOnChange(PriceOne, event.target.value);
+        }
+    }
+
+    function LocationOnClick(location){
+        const LocationInputText = document.getElementById("LocationInputTextFilter");
+
+        LocationInputText.value = location;
+        LocationInputText.style.border = "1px solid aqua";
+    }
+
+    // function AllCategories(){
+    //     axios.get("https://fakestoreapi.com/products")
+    //     .then((res) => {
+    //         setAllCategory(res.data);
+    //         console.log(res.data);
+    //     })
+    //     .catch((error) => {
+    //       console.log(error.message);
+    //     })
+    // }
+        
+
     return (<>
-        <div className="FilterItemsdiv">
-            <p className="FilterItemDivHeading">CATEGORIES</p>
+        <div className="FilterItemsdiv" id="FilterItemsdivID">
+            <p className="FilterItemDivHeading" >CATEGORIES</p>
             <ul className="ps-0">
                 <li>
-                    <a href="">All categories</a>
-                    
+                    <NavLink  to={"/CategoryPage/" + "products"}  className="nav-link">All categories</NavLink>
                 </li>
 
                 <li className="ps-3">
@@ -19,8 +75,8 @@ function FilterSection(){
 
         <div className="FilterItemsdiv pb-1">
             <ul>
-                <li className="list1">
-                    <a href="">Mobile Phones <span>(153156)</span></a>
+                {/* <li className="list1">
+                <NavLink to="/OnlyCategoryPage" state={{title:"jewelery"}}>Mobile Phones</NavLink>
                 </li>
 
                 <li>
@@ -33,15 +89,36 @@ function FilterSection(){
 
                 <li>
                     <a href="">Tablets <span>(6001)</span></a>
+                </li> */}
+
+                {FilterCategory.map((item) => {
+            return (
+                <li className="">
+                    <NavLink  to={"/CategoryPage/" + item}  className="nav-link">{item}</NavLink>
                 </li>
+            );
+        })}
             </ul>
         </div><hr></hr>
 
         {/* Filter Location */}
 
-        <div className="FilterLocationDiv">
+        <div className="FilterLocationDiv dropdown">
             <h6>LOCATIONS</h6>
-            <input className="LocationInput" type={"text"} placeholder="Pakistan"></input>
+            <input className="LocationInput" data-bs-toggle="dropdown" aria-expanded="false" type={"text"}
+            id="LocationInputTextFilter" placeholder={"Pakistan"} style={{outline:"none"}}></input>
+
+                        <div className="dropdown-menu dropdown-menu pt-4 pb-2 pe-3">
+                            {LocationsArray.map((location) => {
+                                return (
+                                    <ul style={{listStyle: "none", fontWeight: "400"}}>
+                                        <li onClick={() => {
+                                            LocationOnClick(location.location)
+                                        }}>{location.location}</li>
+                                    </ul>
+                                )
+                            })}
+                        </div>
         </div>
 
         {/* Location Region */}
@@ -75,13 +152,15 @@ function FilterSection(){
                 </li>
             </ul>
         </div>
-
+        {/* onChange={() => {
+                props.FromPriceChange();
+            }} */}
         {/* Filter Price  */}
 
         <div className="FilterPriceDiv pb-2 pt-3">
             <h6 className="PriceHeading">PRICE</h6>
-            <input className="PriceInput" type={"number"} value="250" placeholder="0"></input>
-            <input className="PriceInput" type={"number"} value="1000000" placeholder="1000000"></input>
+            <input className="PriceInput" onChange={FromPrice} type={"number"} placeholder="0"></input>
+            <input className="PriceInput" onChange={ToPrice} type={"number"} placeholder="1000000"></input>
             <input className="RangeInput" type={"range"} min="0" max="1000000"></input>
         </div>
 

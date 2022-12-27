@@ -1,36 +1,62 @@
 
-import { NavLink } from "react-router-dom";
+import { NavLink , Link} from "react-router-dom";
 import "./navbar.css";
 import NavArray from "./NavbarArray";
 import CategoryPage from "../CategoryPage/CategoryPage";
 import axios from "axios";
+import { useState, useEffect } from "react";
+import { RotatingLines } from "react-loader-spinner";
 
 function Navbar (){
 
-    // useEffect(() => {
-    //     axios.get("https://fakestoreapi.com/products/" + props.id)
-    //     .then((res) => {
-    //         console.log(res.data);
-    //     })
-    //     .catch((error) => {
-    //       console.log(error.message);
-    //     })
-    //   },[]);
+    const [Categories, setCategories] = useState([]);
+    const [isLoading, setisLoading] = useState(true);
+    
 
-        function getJewellery(){
-            axios.get("https://fakestoreapi.com/products/category/jewelery")
-            .then((res) => {
-                console.log(res.data);
-            })
-        }
+    useEffect(() => {
+        axios.get("https://fakestoreapi.com/products/categories")
+        .then((res) => {
+            setCategories(res.data);
+            setisLoading(false);
+        })
+        .catch((error) => {
+          console.log(error.message);
+        })
+      },[]);
 
     return (
         <>
-    <nav class="navbar navbar-expand-lg navbarSection dropdown">
 
-    <a class="navbar-brand NavbarBrand dropdown-toggle" href="" data-bs-toggle="dropdown" aria-expanded="false">ALL CATEGORIES
+        {isLoading ? 
+
+            <RotatingLines
+            strokeColor="grey"
+            strokeWidth="5"
+            animationDuration="0.75"
+            width="96"
+            visible={true} />
+            
+            :  
+            
+    <nav className="navbar navbar-expand-lg navbarSection dropdown">
+
+    <span className="navbar-brand NavbarBrand dropdown-toggle"  data-bs-toggle="dropdown" aria-expanded="false">ALL CATEGORIES
     
-    <div className="row DropDownSection dropdown-menu dropdown-menu-dark">
+    <div className="row DropDownSection dropdown-menu">
+        <div className="col-lg-12 p-0">
+            <ul className="CategoryUlList">
+                {Categories.map((item) => {
+                    return (
+                        <li>
+                            <NavLink className={"CategoryDropDown"} to={"/CategoryPage/" + item} >{item}</NavLink>
+                        </li>
+                    )
+                })} 
+            </ul>
+            </div>
+                </div>
+
+    {/* <div className="row DropDownSection dropdown-menu dropdown-menu-dark">
         <div className="col-lg-12">
             <div className="row">
 
@@ -228,31 +254,42 @@ function Navbar (){
             </div>
         </div>
 
-    </div>
-    </a>
+    </div> */}
+    </span>
 
         {/* <ul class="dropdown-menu dropdown-menu-dark">
             <li><a class="dropdown-item" href="#">Action</a></li>
             <li><a class="dropdown-item" href="#">Another action</a></li>
             <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul> */}
+        //   </ul> */}
+        {/* to={`/${item}`} */}
         
     <ul className="navbar-nav NavbarItems">
+        {Categories.map((item) => {
+            return (
+                <li className="nav-item" >
+                    <NavLink  to={"/CategoryPage/" + item}  className="nav-link">{item}</NavLink>
+                </li>
+            );
+        })}
+        
+        {/* state={{loading:true}} params = {{category: item}} */}
 
-        <li className="nav-item" >
-            <NavLink to="/CategoryPage" state={{title:"jewelery"}} onClick={getJewellery} className="nav-link CategoryPageLink">Mobile Phones</NavLink>
+    {/* onClick={getJewellery} */}
+        {/* <li className="nav-item" >
+            <NavLink to={"/CategoryPage/:category"} state={{title:"electronics"}}  className="nav-link">electronics</NavLink>
         </li>
         
         <li className="nav-item">
-            <a className="nav-link" href="">Cars</a>
+        <NavLink to={"/CategoryPage/:" + "jewelery"} state={{title:"jewelery"}}  className="nav-link ">jewelery</NavLink>
         </li>
         
         <li className="nav-item">
-            <a className="nav-link" href="">Motorcycles</a>
+        <NavLink to="/CategoryPage/:category" state={{title:"men's clothing"}}  className="nav-link ">men's clothing</NavLink>
         </li>
         
         <li className="nav-item">
-            <a className="nav-link" href="">Houses</a>
+        <NavLink to="/CategoryPage/:category" state={{title:"women's clothing"}}  className="nav-link ">women's clothing</NavLink>
         </li>
 
         <li className="nav-item">
@@ -265,11 +302,11 @@ function Navbar (){
 
         <li className="nav-item">
             <a className="nav-link" href="">Land & Plots</a>
-        </li>
+        </li> */}
 
         </ul>
     </nav>
-        </>
+}</>
     );
 }
 

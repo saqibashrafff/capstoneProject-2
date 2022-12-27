@@ -80,3 +80,255 @@
 span{
     font-weight: 400;
 }
+
+@media only screen and (max-width: 992px){
+    .FooterHeading {
+        font-size: 0.8rem;
+        font-weight: 700;
+    }
+
+    .FooterListItems a{
+        text-decoration:none;
+        color: rgba(0,47,52,.64);
+        font-size: 0.7rem;
+    }
+
+    .FooterCol1 {
+        padding-left: 0px;
+    }
+    
+    .FooterCol2 {
+        padding-left: 20px;
+    }
+    
+    .FooterCol3 {
+        padding-left: 20px;
+    }
+    
+    .FooterCol4{
+        padding-left: 35px;
+    }
+
+    .ContactHeading {
+        font-size: 0.8rem;
+        font-weight: 700;
+        margin-bottom: 5px;
+        margin-left: 80px;
+    }
+
+    .ContactIconsDiv {
+        margin: 0 0 30px 80px;
+        width: 40%;
+    }
+    
+    .ContactIconsDiv a{
+        margin-right: 4px;
+    }
+
+    .ContactImagesDiv a{
+        margin-right: 5px;
+    }
+    
+    .ContactImagesDiv{
+        width: 70%;
+        margin-left: 80px;
+    }
+
+    .ContactImagesDiv img{
+        width: 29%;
+    }
+
+    .ReleaseDateSection {
+        padding: 13px 30px 1px 0;
+        background-color: #002f34;
+    }
+    
+    .ReleaseDate {
+        font-size: 0.7rem;
+        text-align: right;
+        font-weight: 600;
+        color: white;
+    }
+    
+    span{
+        font-weight: 400;
+    }
+
+    .ReleaseDateSection p{
+        margin-bottom: 13px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .FooterHeading {
+        font-size: 0.7rem;
+        font-weight: 700;
+    }
+
+    .FooterListItems a{
+        text-decoration:none;
+        color: rgba(0,47,52,.64);
+        font-size: 0.6rem;
+    }
+
+    .FooterCol1 {
+        padding-left: 0px;
+    }
+    
+    .FooterCol2 {
+        padding-left: 20px;
+    }
+    
+    .FooterCol3 {
+        padding-left: 20px;
+    }
+    
+    .FooterCol4{
+        padding-left: 20px;
+    }
+
+    .ContactHeading {
+        font-size: 0.7rem;
+        font-weight: 700;
+        margin-bottom: 5px;
+        margin-left: 60px;
+    }
+
+    .ContactIconsDiv {
+        margin: 0 0 20px 60px;
+        width: 40%;
+    }
+    
+    .ContactIconsDiv a{
+        margin-right: 3px;
+    }
+
+    .ContactImagesDiv a{
+        margin-right: 4px;
+    }
+    
+    .ContactImagesDiv{
+        width: 70%;
+        margin-left: 60px;
+    }
+
+    .ContactImagesDiv img{
+        width: 30%;
+    }
+
+    .ReleaseDateSection {
+        padding: 12px 30px 0px 0;
+        background-color: #002f34;
+    }
+    
+    .ReleaseDate {
+        font-size: 0.6rem;
+        text-align: right;
+        font-weight: 600;
+        color: white;
+    }
+    
+    span{
+        font-weight: 400;
+    }
+
+    .ReleaseDateSection p{
+        margin-bottom: 12px;
+    }
+}
+
+@media only screen and (max-width: 576px){
+
+    .FooterSection{
+        height: 211px;
+    }
+    .FooterHeading {
+        font-size: 0.6rem;
+        font-weight: 700;
+    }
+
+    .FooterListItems a{
+        text-decoration:none;
+        color: rgba(0,47,52,.64);
+        font-size: 0.5rem;
+    }
+
+    .FooterCol1 {
+        padding-left: 0px;
+        width: 25%;
+    }
+    
+    .FooterCol2 {
+        padding-left: 10px;
+        width: 25%;
+    }
+    
+    .FooterCol3 {
+        padding-left: 10px;
+        width: 25%;
+    }
+    
+    .FooterCol4{
+        padding-left: 10px;
+        width: 25%;
+    }
+
+    .FooterCol5{
+        padding: 10px 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .ContactHeading {
+        font-size: 0.6rem;
+        font-weight: 700;
+        margin-left: 30px;
+    }
+
+    .ContactIconsDiv {
+        margin: 0;
+        text-align: center;
+    }
+
+    .ContactIconsDiv img{
+        width: 8%;
+    }
+    
+    .ContactIconsDiv a{
+        margin-right: 3px;
+    }
+
+    .ContactImagesDiv a{
+        margin-right: 4px;
+    }
+
+    .ContactImagesDiv img{
+        width: 20%;
+    }
+
+    .ContactImagesDiv{
+        margin: 0;
+        text-align: left;
+    }
+
+    .ReleaseDateSection {
+        padding: 10px 30px 1px 0;
+        background-color: #002f34;
+    }
+
+    .ReleaseDateSection p{
+        margin-bottom: 9px;
+    }
+    
+    .ReleaseDate {
+        font-size: 0.5rem;
+        text-align: right;
+        font-weight: 600;
+        color: white;
+    }
+    
+    span{
+        font-weight: 400;
+    }
+}
