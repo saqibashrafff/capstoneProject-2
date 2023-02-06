@@ -7,6 +7,11 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import { RotatingLines } from "react-loader-spinner";
 
+import listIcon from "../CategoryPage/CategoryImages/ViewDesktop.svg"
+import DesktopIcon from "../CategoryPage/CategoryImages/ViewMenu.svg"
+import ScreenIcon from "../CategoryPage/CategoryImages/ViewDesktop.svg"
+import HeartIcon from "../CategoryPage/CategoryImages/HeartIcon.svg"
+
 function CategoryPage(){
 
     const location = useLocation();
@@ -42,7 +47,7 @@ function CategoryPage(){
         .catch((error) => {
           console.log(error.message);
         })
-      },[category,OnePrice,TwoPrice]);
+      },[category,OnePrice,TwoPrice,]);
 
       function DesktopView(){
         setView(true);
@@ -251,9 +256,9 @@ return (
 
                     <div className="col-lg-2 col-md-3 p-0 ps-2 border-start border-end CategoryViewIconsCol">
                         <span>VIEW</span>
-                        <img onClick={ListView} src="Images/ViewTags.svg"></img>
-                        <img onClick={DesktopView} src="Images/ViewMenu.svg" ></img>
-                        <img onClick={ScreenView} src="Images/ViewDesktop.svg" ></img>
+                        <img onClick={ListView} src={listIcon}></img>
+                        <img onClick={DesktopView} src={DesktopIcon} ></img>
+                        <img onClick={ScreenView} src={ScreenIcon} ></img>
                     </div>
 
                     <div className="col-lg-2 col-md-3 ps-1 dropdown">
@@ -310,14 +315,15 @@ return (
                                 return (
                                 <>
                                 <div className="col-lg-12 col-md-12 ">
-                                <NavLink style={{textDecoration:"none"}} to={"/AdPage"} state={{id: item.id}}><div className="row CategoryItemRow ">
+                                <NavLink style={{textDecoration:"none"}} to={"/AdPage"} state={{id: item.id}}>
+                                    <div className="row CategoryItemRow ">
                                 <div className="col-lg-4 col-md-4 bg-warning ps-0 pe-1 ItemImageDiv">
                                 <img className="ViewIMageDiv bg-dark" src={item.image}></img>
                                 </div>
 
                                 <div className="col-lg-7 col-md-7 ItemTextDiv">
                                     <div className="ItemHeadingDiv">
-                                        <p style={{color:""}}>{item.title.slice(0,60)}</p>
+                                        <p>{item.title.slice(0,60)}</p>
                                         <h5>{item.price}$</h5>
                                     </div>
 
@@ -327,7 +333,7 @@ return (
                                 </div>
 
                                 <div className="col-lg-1 col-md-1 ItemIcondiv">
-                                    <img src="Images/HeartIcon.svg" width={"45%"}></img>
+                                    <img src={HeartIcon} width={"45%"}></img>
                                 </div>
                                 </div></NavLink> 
                                 </div>
@@ -343,9 +349,9 @@ return (
                                         <div className="col-lg-12 col-md-12 ScreenViewDiv p-0">
                                         <img className="bg-dark" src={item.image} ></img>
                                     </div>
-                                    <div className="col-lg-11 col-md-11 ps-1 p-0 bg-warning ItemTextDiv">
-                                        <div className="bg-light pt-2 pb-2 ps-2">
-                                        <div className="ItemHeadingDiv bg-light pb-1">
+                                    <div className="col-lg-11 col-md-11 ps-1 p-0 ItemTextDiv">
+                                        <div className=" pt-2 pb-2 ps-2">
+                                        <div className="ItemHeadingDiv pb-1">
                                             <p>{item.title.slice(0,60)}</p>
                                             <h5>{item.price}$</h5>
                                         </div>
@@ -357,7 +363,7 @@ return (
                                     </div>
     
                                     <div className="col-lg-1 col-md-1 ItemIcondiv">
-                                            <img src="Images/HeartIcon.svg" width={"45%"}></img>
+                                            <img src={HeartIcon} width={"45%"}></img>
                                     </div>
                                         </div></NavLink>
 

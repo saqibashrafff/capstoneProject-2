@@ -1,6 +1,10 @@
 
 import "./detail.css";
 
+import HeartIcon from "../Ad Page/AdPage Images/HeartIcon.svg"
+import ShareIcon from "../Ad Page/AdPage Images/ShareIcon.svg"
+import UserImage from "../Ad Page/AdPage Images/User.png"
+
 function ProductDetail(props){
     return(
         <div className="col-lg-4 col-md-6 col-sm-12 ProductDetailCol">
@@ -20,8 +24,8 @@ function ProductDetail(props){
 
             <div className="col-lg-4 col-md-4 col-sm-4 DetailDiv2">
                 <div className="IconDiv ">
-                        <img src="Images/ShareIcon.svg" width={"20%"} className="p-0"></img>
-                        <img src="Images/HeartIcon.svg" width={"20%"} className="p-0" ></img>
+                        <img src={HeartIcon} width={"20%"} className="p-0"></img>
+                        <img src={ShareIcon} width={"20%"} className="p-0" ></img>
                     </div>
                         <span className="DetailDiv2Span">2 weeks ago</span>
                     
@@ -37,7 +41,7 @@ function ProductDetail(props){
                 </div>
         
                 <div className="col-lg-2 col-md-2 col-sm-2 SellerImageDiv">
-                    <img src="Images/User.png" width={"130%"}></img>
+                    <img src={UserImage} width={"130%"}></img>
                 </div>
 
                 <div className="col-lg-9 col-md-9 col-sm-9 SellerNameDiv">

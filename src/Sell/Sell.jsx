@@ -4,6 +4,8 @@ import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./sell.css";
 
+import UserImage from "../Ad Page/AdPage Images/User.png"
+
 function Sell(){
 
     const [isTitle, setisTitle] = useState("");
@@ -821,7 +823,7 @@ function Sell(){
                         <div className="PersonalInputsection">
 
                         <div className="userImagediv ">
-                            <img src="Images/user.png" width={"90%"}></img>
+                            <img src={UserImage} width={"90%"}></img>
                         </div>
 
                         <div className="w-100">

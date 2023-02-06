@@ -1,6 +1,10 @@
 
 import './download.css';
 
+import AppStore from "../Footer/Footer Images/AppStore.svg"
+import GooglePlay from "../Footer/Footer Images/GooglePlay.svg"
+import AppGallery from "../Footer/Footer Images/AppGallery.svg"
+
 function Download (){
     return (
         <>
@@ -21,15 +25,15 @@ function Download (){
 
                     <div className='DownloadImagesDiv'>
                         <a href="">
-                            <img src="Images/AppStore.svg" width={"30%"}></img>
+                            <img src={AppStore} width={"30%"}></img>
                         </a>
 
                         <a href="">
-                            <img src="Images/GooglePlay.svg" width={"30%"}></img>
+                            <img src={GooglePlay} width={"30%"}></img>
                         </a>
 
                         <a href="">
-                            <img src="Images/AppGallery.svg" width={"30%"}></img>
+                            <img src={AppGallery} width={"30%"}></img>
                         </a>
                         
                     </div>

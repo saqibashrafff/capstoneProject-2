@@ -1,6 +1,8 @@
 
 import "./advertise.css"
 
+
+
 function Advertisement (){
     return (
         <>

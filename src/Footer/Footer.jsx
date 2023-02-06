@@ -1,6 +1,14 @@
 
 import './footer.css';
 
+import fbIcon from "../Footer/Footer Images/FbIcon.svg"
+import InstaIcon from "../Footer/Footer Images/instaIcon.svg"
+import YoutubeIcon from "../Footer/Footer Images/YoutubeIcon.svg"
+import TwitterIcon from "../Footer/Footer Images/TwitterIcon.svg"
+import AppStore from "../Footer/Footer Images/AppStore.svg"
+import GooglePlay from "../Footer/Footer Images/GooglePlay.svg"
+import AppGallery from "../Footer/Footer Images/AppGallery.svg"
+
 function Footer (){
     return (
         <>
@@ -96,33 +104,33 @@ function Footer (){
 
                     <div className='ContactIconsDiv '>
                         <a href=''>
-                            <img src="Images/FbIcon.svg" width={"15%"}></img>
+                            <img src={fbIcon} width={"15%"}></img>
                         </a>
 
                         <a href=''>
-                            <img src="Images/TwitterIcon.svg" width={"15%"}></img>
+                            <img src={TwitterIcon} width={"15%"}></img>
                         </a>
 
                         <a href=''>
-                            <img src="Images/YoutubeIcon.svg" width={"15%"}></img>
+                            <img src={YoutubeIcon} width={"15%"}></img>
                         </a>
 
                         <a href=''>
-                            <img src="Images/instaIcon.svg" width={"15%"}></img>
+                            <img src={InstaIcon} width={"15%"}></img>
                         </a>
                     </div>
 
                     <div className='ContactImagesDiv'>
                         <a href="">
-                            <img src="Images/AppStore.svg" width={"30%"}></img>
+                            <img src={AppStore} width={"30%"}></img>
                         </a>
 
                         <a href="">
-                            <img src="Images/GooglePlay.svg" width={"30%"}></img>
+                            <img src={GooglePlay} width={"30%"}></img>
                         </a>
 
                         <a href="">
-                            <img src="Images/AppGallery.svg" width={"30%"}></img>
+                            <img src={AppGallery} width={"30%"}></img>
                         </a>
                         
                     </div>
