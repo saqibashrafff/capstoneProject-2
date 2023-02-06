@@ -63,7 +63,7 @@ function Body(props){
 
                     return (
                         <div className="col-lg-3 px-1 col-md-6 col-sm-12 CardColDiv" key={item.id}>
-                <NavLink className={"NavLinkBody"} to='/AdPage' state={{id:item.id}} ><div className="card-group h-25 bg-warning">
+                <NavLink className={"NavLinkBody"} to='/AdPage' state={{id:item.id}} ><div className="card-group h-25">
             <div className="card">
             <img src={item.image} className="card-img-top " alt="..."/>
                 <div className="card-body">
